@@ -4,17 +4,76 @@
     <meta charset="UTF-8">
     <title>Sip'n'Save</title>
 </head>
+<style>
+     body {
+        background-color: black;
+    }
+
+    a:link {
+        color: rgb(15, 215, 15);
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: rgba(11, 182, 11, 0.718);
+        background-color: transparent;
+    }
+
+    a:visited {
+        color: rgb(15, 215, 15);
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    b:link {
+        color: rgb(255, 0, 0);
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    b:hover {
+        color: rgba(255, 0, 0, 0.648);
+        background-color: transparent;
+    }
+
+    b:visited {
+        color: rgb(255, 0, 0);
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+
+    .question {
+        font-size: 600%;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    .answer {
+        font-size: 500%;
+        font-family:"Lucida Console", "Courier New", monospace;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10%;
+    }
+
+    .gif {
+        font-family:"Lucida Console", "Courier New", monospace;
+        margin-top: 100px; 
+        max-width: 100%;
+    }
+
+
+</style>
 <body>
-    <h1>Feeling thirsty?</h1>
-    <p>
-        Feeling thirsty? Let us help you quench your thirst without draining your wallet!
-        Welcome to <em>Sip'n'Save</em>, your ultimate guide to affordable drinks in Copenhagen.
-        Whether you're a local looking for a budget-friendly night out or a traveler seeking economical sips,
-        we've got you covered. Our extensive database compiles the prices of
-        drinks, beers, wines, and shots across the city, allowing you to find the cheapest options in any given area.
-        Say goodbye to overpriced libations and join us in discovering the best deals for your taste buds.
-        Cheers to affordable indulgence!
-    </p>
-            <img src="/static/logo.png">
+    <h1 class="question">Feeling thirsty?</h1>
+    <a href=" {{ url_for('drink_type') }} " target="_self" class="answer">Yes</a>
+    <b href=" {{ url_for('liar') }} " target="_self" class="answer">No</b> 
+    <img src="static/drink.gif" class="gif"/>
 </body>
+
+    
+
 </html>

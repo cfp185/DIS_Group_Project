@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drink type</title>
+
+<style>
+a:link, a:visited {
+  background-color: #3ff436;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgba(0, 255, 13, 0.734);
+}
+
+
+  .center {
+  margin-left: 52em;
+}
+  
+.button {
+  border: none;
+  color: white;
+  border-radius: 12px;
+  padding: 11px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  opacity:1;
+  background-color: #21df14;
+}
+  
+ .button:hover {
+  	opacity:0.5
+}
+
+ body {
+background-color: black;
+}
+ 
+  .question{
+    font-family:"Lucida Console", "Courier New", monospace;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  
+ .buttontext{
+   font-family:"Lucida Console", "Courier New", monospace;
+   color: #FFFFFF;
+  transform: scale(1.2);
+  margin: 0.5em;
+  }
+
+  .flex-parent {
+  display: flex;
+}
+
+.jc-center {
+  justify-content: center;
+}
+  </style>
+  
+<h2 class="question"> 
+    Where would you like to drink?
+  </h2>  
+<input type="radio" name= "city" id="1" class="center" value="Aarhus">
+  <label for="1" class="buttontext" >Aarhus </label> <br> 
+ <input type="radio" name= "city" id="2"  class="center" value="Odense">
+  <label for="2" class="buttontext" >Odense </label><br> 
+  <input type="radio" name= "city" id="3"  class="center"value="Copenhagen">
+  <label for="3" class="buttontext" >Copenhagen </label>
+  <br> 
+  <h2 class="question"> 
+    What would you like to drink?
+  </h2>  
+  <input type="radio" name= "drink" id="1"  class="center"value="Beer">
+  <label for="1" class="buttontext" >Beer </label> <br> 
+ <input type="radio" name= "drink" id="2" class="center" value="Wine">
+  <label for="2" class="buttontext" >Wine </label><br> 
+  <input type="radio" name= "drink" id="3"  class="center"value="Cocktail">
+  <label for="3" class="buttontext" >Cocktail </label>
+    <h2 class="question"> 
+    Do you need to book a table?
+  </h2 >  
+  <input type="radio" name= "table" id="1"  class="center"value="yes">
+  <label for="1" class="buttontext" >yes </label> <br> 
+ <input type="radio" name= "table" id="2" class="center" value="no">
+  <label for="2" class="buttontext" >no </label><br> 
+   <input type="submit" class="button flex-parent jc-center" value="Submit">
+
+</body>
+</html>
+  <p>
+    <a href="{{ url_for('front_page') }}">Front Page</a>
+</p>
+<a href="{{ url_for('result') }}" target="_blank">Submit</a>
+</div>
+
+</body>
+</html>
