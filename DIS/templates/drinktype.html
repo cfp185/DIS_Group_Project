@@ -17,33 +17,49 @@ a:link, a:visited {
 a:hover, a:active {
   background-color: rgba(0, 255, 13, 0.734);
 }
+  
+ body {
+background-color: black;
+}
 
+.flex-parent {
+  display: flex;
+}
 
-  .center {
-  margin-left: 52em;
+.jc-center {
+  justify-content: center;
+}
+
+margin-right {
+  margin-right: 20px;
 }
   
 .button {
-  border: none;
+   border: none;
   color: white;
   border-radius: 12px;
-  padding: 11px 32px;
+  padding: 11px 25px;
   text-align: center;
-  display: inline-block;
   font-size: 16px;
   cursor: pointer;
   transition-duration: 0.4s;
   opacity:1;
-  background-color: #21df14;
 }
   
  .button:hover {
   	opacity:0.5
 }
-
- body {
-background-color: black;
-}
+  
+  .otherbutton{
+  background-color: #FF63E0;
+  margin: 2.5em;
+  }
+  
+  .submit{
+  	  background-color: #21df14;
+  margin: 0 auto;
+  display: block;
+  }
  
   .question{
     font-family:"Lucida Console", "Courier New", monospace;
@@ -55,45 +71,38 @@ background-color: black;
    font-family:"Lucida Console", "Courier New", monospace;
    color: #FFFFFF;
   transform: scale(1.2);
-  margin: 0.5em;
+  
   }
-
-  .flex-parent {
-  display: flex;
-}
-
-.jc-center {
-  justify-content: center;
-}
   </style>
   
 <h2 class="question"> 
     Where would you like to drink?
   </h2>  
-<input type="radio" name= "city" id="1" class="center" value="Aarhus">
-  <label for="1" class="buttontext" >Aarhus </label> <br> 
- <input type="radio" name= "city" id="2"  class="center" value="Odense">
-  <label for="2" class="buttontext" >Odense </label><br> 
-  <input type="radio" name= "city" id="3"  class="center"value="Copenhagen">
-  <label for="3" class="buttontext" >Copenhagen </label>
+  <div class="jc-center flex-parent">
+    	<input type="button" name= "city" id="1" class="otherbutton button buttontext margin-right" value="Aarhus">
+		 <input type="button" name= "city" id="2" class="otherbutton button buttontext margin-right" value="Odense">
+ 		 <input type="button" name= "city" id="3" class= "otherbutton button buttontext "  value="Copenhagen">
+  </div>
+
+ 
   <br> 
   <h2 class="question"> 
     What would you like to drink?
   </h2>  
-  <input type="radio" name= "drink" id="1"  class="center"value="Beer">
-  <label for="1" class="buttontext" >Beer </label> <br> 
- <input type="radio" name= "drink" id="2" class="center" value="Wine">
-  <label for="2" class="buttontext" >Wine </label><br> 
-  <input type="radio" name= "drink" id="3"  class="center"value="Cocktail">
-  <label for="3" class="buttontext" >Cocktail </label>
+    <div class="jc-center flex-parent">
+    	<input type="button" name= "drink" id="4" class="otherbutton button buttontext margin-right" value="Beer">
+		 <input type="button" name= "drink" id="5" class="otherbutton button buttontext margin-right" value="Wine">
+ 		 <input type="button" name= "drink" id="6" class= "otherbutton button buttontext "  value="Cocktail">
+  </div>
     <h2 class="question"> 
     Do you need to book a table?
   </h2 >  
-  <input type="radio" name= "table" id="1"  class="center"value="yes">
-  <label for="1" class="buttontext" >yes </label> <br> 
- <input type="radio" name= "table" id="2" class="center" value="no">
-  <label for="2" class="buttontext" >no </label><br> 
-   <input type="submit" class="button flex-parent jc-center" value="Submit">
+    <div class="jc-center flex-parent">
+    	<input type="button" name= "table" id="7" class="otherbutton button buttontext margin-right" value="Yes">
+ 		 <input type="button" name= "table" id="8" class= "otherbutton button buttontext "  value="No">
+  </div>
+  
+   <input type="submit" class="button submit buttontext" value="Submit">
 
 </body>
 </html>
