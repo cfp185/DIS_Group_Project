@@ -9,41 +9,6 @@
         background-color: black;
     }
 
-    a:link {
-        color: rgb(15, 215, 15);
-        background-color: transparent;
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: rgba(11, 182, 11, 0.718);
-        background-color: transparent;
-    }
-
-    a:visited {
-        color: rgb(15, 215, 15);
-        background-color: transparent;
-        text-decoration: none;
-    }
-
-    b:link {
-        color: rgb(255, 0, 0);
-        background-color: transparent;
-        text-decoration: none;
-    }
-
-    b:hover {
-        color: rgba(255, 0, 0, 0.648);
-        background-color: transparent;
-    }
-
-    b:visited {
-        color: rgb(255, 0, 0);
-        background-color: transparent;
-        text-decoration: none;
-    }
-
-
     .question {
         font-size: 600%;
         color: #FFFFFF;
@@ -51,10 +16,10 @@
     }
 
     .answer {
-        font-size: 500%;
+        font-size: 300%;
         font-family:"Lucida Console", "Courier New", monospace;
         display: block;
-        margin-left: auto;
+        margin-left: 100;
         margin-right: auto;
         width: 10%;
     }
@@ -69,8 +34,15 @@
 </style>
 <body>
     <h1 class="question">Feeling thirsty?</h1>
-    <a href=" {{ url_for('drink_type') }} " target="_self" class="answer">Yes</a>
-    <b href=" {{ url_for('liar') }} " target="_self" class="answer">No</b> 
+    <body>
+        <ul>
+            <li style="display:inline-block;">
+                <a href="{{ url_for('drink_type') }}" class="answer" style="text-decoration:none; color:#00FF00;"><h1>Yes&nbsp&nbsp&nbsp&nbsp</h1></a>
+            </li>
+            <li style="display:inline-block;">
+                <a href="{{ url_for('liar') }}" class="answer" style="text-decoration:none; color:#FF1919;"><h1>No</h1></a>
+            </li>
+        </ul>
     <img src="static/drink.gif" class="gif"/>
 </body>
 
