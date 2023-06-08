@@ -22,8 +22,14 @@ def result():
         "result.html"
     )
 
-@app.route("/liar")
-def liar():
+@app.route("/areyousure")
+def are_you_sure():
     return render_template(
-        "liar.html"
+        "areyousure.html"
+    )
+
+@app.route("/mind")
+def mind():
+    return render_template(
+        "mind.html"
     )
