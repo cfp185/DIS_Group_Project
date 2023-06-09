@@ -3,113 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Drink type</title>
+    <link href="../static/main.css" rel="stylesheet">
+</head>
 
-<style>
-a:link, a:visited {
-  background-color: #3ff436;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
-a:hover, a:active {
-  background-color: rgba(0, 255, 13, 0.734);
-}
-  
- body {
-background-color: black;
-}
-
-.flex-parent {
-  display: flex;
-}
-
-.jc-center {
-  justify-content: center;
-}
-
-.margin-right {
-  margin-right: 20px;
-}
-  
-.button {
-   border: none;
-  color: white;
-  border-radius: 12px;
-  padding: 11px 25px;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  transition-duration: 0.4s;
-  opacity:1;
-}
-  
- .button:hover {
-  	opacity:0.5
-}
-  
-  .otherbutton{
-  background-color: #FF63E0;
-  margin: 2.5em;
-  }
-  
-  .submit{
-  	  background-color: #21df14;
-  margin: 0 auto;
-  display: block;
-  }
- 
-  .question{
-    font-family:"Lucida Console", "Courier New", monospace;
-    color: #FFFFFF;
-    text-align: center;
-  }
-  
- .buttontext{
-   font-family:"Lucida Console", "Courier New", monospace;
-   color: #FFFFFF;
-  transform: scale(1.2);
-  
-  }
-  </style>
-  
-<h2 class="question"> 
-    Where would you like to drink?
-  </h2>  
-  <div class="jc-center flex-parent">
-    	<input type="button" name= "city" id="1" class="otherbutton button buttontext margin-right" value="Aarhus">
-		 <input type="button" name= "city" id="2" class="otherbutton button buttontext margin-right" value="Odense">
- 		 <input type="button" name= "city" id="3" class= "otherbutton button buttontext "  value="Copenhagen">
-  </div>
-
- 
-  <br> 
+<div class="container">
   <h2 class="question"> 
-    What would you like to drink?
-  </h2>  
-    <div class="jc-center flex-parent">
-    	<input type="button" name= "drink" id="4" class="otherbutton button buttontext margin-right" value="Beer">
-		 <input type="button" name= "drink" id="5" class="otherbutton button buttontext margin-right" value="Wine">
- 		 <input type="button" name= "drink" id="6" class= "otherbutton button buttontext "  value="Cocktail">
-  </div>
-    <h2 class="question"> 
-    Do you need to book a table?
-  </h2 >  
-    <div class="jc-center flex-parent">
-    	<input type="button" name= "table" id="7" class="otherbutton button buttontext margin-right" value="Yes">
- 		 <input type="button" name= "table" id="8" class= "otherbutton button buttontext "  value="No">
-  </div>
-  
-   <input type="submit" class="button submit buttontext" value="Submit">
+      Where would you like to drink?
+    </h2>  
+    <form action="{{url_for('result')}}" method="POST">
+          <input type="radio" name= "city" id="1" value="Aarhus" >
+          <label for="1" class="buttontext">Aarhus</label> <br> 
+          <input type="radio" name= "city" id="2"  value="Odense">
+          <label for="2" class="buttontext">Odense</label> <br> 
+          <input type="radio" name= "city" id="3"   value="Copenhagen">
+          <label for="3" class="buttontext">Copenhagen</label> 
+  <br> 
 
+      
+    <h2 class="question"> 
+      What would you like to drink?
+    </h2>  
+        <input type="radio" name= "drink" id="4" value="Beer">
+    <label for="4" class="buttontext" >Beer</label> <br> 
+      <input type="radio" name= "drink" id="5" value="Wine">
+    <label for="5" class="buttontext" >Wine</label> <br> 
+      <input type="radio" name= "drink" id="6" value="Cocktail">
+    <label for="6" class="buttontext">Cocktail</label> 
+      <h2 class="question"> 
+      Do you need to book a table?
+    </h2 >  
+      
+        <input type="radio" name= "table" id="7" value="Yes">
+    <label for="7" class="buttontext">Yes</label> <br> 
+      <input type="radio" name= "table" id="8"   value="No">
+    <label for="8" class="buttontext">No</label> 
+  
+    
+    <button type="submit" class="button submit buttontext">Submit</button>
+    </form>
+</div>
 </body>
 </html>
   <p>
     <a href="{{ url_for('front_page') }}">Front Page</a>
 </p>
-<a href="{{ url_for('result') }}" target="_blank">Submit</a>
+<!-- <a href="{{ url_for('result') }}" target="_blank">Submit</a> -->
 </div>
 
 </body>

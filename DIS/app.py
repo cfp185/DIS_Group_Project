@@ -1,8 +1,10 @@
-from flask import Flask, render_template, url_for
-
+from flask import Flask, render_template, url_for, request
+import psycopg2
+import datetime
 
 app = Flask(__name__)
 app.config
+
 
 @app.route("/")
 def front_page():
@@ -16,8 +18,14 @@ def drink_type():
         "drinktype.html"
     )
 
-@app.route("/result")
+@app.route("/result", methods=['POST'])
 def result():
+    if request.method == 'POST':
+        city=request.form["city"]
+        drink=request.form["drink"]
+        table=request.form["table"]
+        time=datetime.datetime.now().hour
+        print(time)
     return render_template(
         "result.html"
     )
@@ -33,3 +41,16 @@ def mind():
     return render_template(
         "mind.html"
     )
+
+if __name__ == '__main__':
+    app.debug=True
+    app.run(port=5001)
+    
+conn = psycopg2.connect(
+    # host='localhost',
+    port='5001',
+    database='bars',
+    user='wkl712',
+    password='1234'
+)
+cursor = conn.cursor()
