@@ -3,8 +3,13 @@ import psycopg2
 import datetime
 
 app = Flask(__name__)
-app.config
 
+conn = psycopg2.connect(
+    database='test',
+    user='postgres',
+    password='1sa63lla'
+)
+cursor = conn.cursor()
 
 @app.route("/")
 def front_page():
@@ -22,13 +27,27 @@ def drink_type():
 @app.route("/result", methods=['POST'])
 def result():
     if request.method == 'POST':
-        city=request.form["city"]
-        drink=request.form["drink"]
-        table=request.form["table"]
+        cursor = conn.cursor()
+        rcity=request.form["city"]
+        rdrink=request.form["drink"]
+        rtable=request.form["table"]
         time=datetime.datetime.now().hour
-        print(city)
+        barquery = "SELECT * FROM bars WHERE city = %s AND %s IS NOT NULL"
+        if rtable:
+            barquery += " AND table_booking = true"
+        barquery += " ORDER BY LEAST (%s)"
+        params= [rcity, rdrink, rdrink]
+        cursor.execute(barquery, params)
+        rows = cursor.fetchall()
+        drinkcol = 6
+        if rdrink == 'beer':
+            drinkcol = 4
+        elif rdrink == 'wine':
+            drinkcol == 5
+        else: 
+            drinkcol == 6
     return render_template(
-        "result.html"
+        "result.html", rows=rows, drinkcol = drinkcol, drink = rdrink
     )
 
 @app.route("/areyousure")
@@ -46,12 +65,3 @@ def mind():
 if __name__ == '__main__':
     app.debug=True
     app.run(port=5001)
-    
-    conn = psycopg2.connect(
-        # host='localhost',
-        port='5001',
-        database='bars',
-        user='wkl712',
-        password='1234'
-    )
-    cursor = conn.cursor()

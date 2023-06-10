@@ -1,13 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
-    <meta charset="UTF-8">
-    <title>Result</title>
+    <title>Query Results</title>
 </head>
 <body>
-    <h1>Result</h1>
-    <p>
-        <a href="{{ url_for('drink_type') }}">Drink Type</a>
-    </p>
+    <h1>Query Results</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Rating</th>
+                <th>Average {{drink}} price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+            <tr>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[3] }}</td>
+                <td>{{ row[7] }}</td>
+                <td>{{ row[drinkcol] }}</td>
+-            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </body>
 </html>

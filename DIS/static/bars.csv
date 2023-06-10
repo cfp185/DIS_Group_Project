@@ -1,101 +1,101 @@
 ID,Name,City,Address,Beer_Price,Wine_Price,Cocktail_Price,Rating,Table_Booking,Happy_Hour_Start, Happy_Hour_End
-001,The Old Irish Pub,1,Studsgade 31,35.50,,9.75,4.2,true,18:00,19:00
-002,Bar Central,1,Vesterbro 62,40.00,25.00,12.50,4.5,false,,
-003,Café Kafka,1,Nørregade 45,,28.00,14.50,4.1,true,18:00,20:00
-004,Brooklyn Bar,2,Vestergade 68,30.00,26.50,,4.3,true,,
-005,Hop House,2,Fynsgade 40,34.50,23.00,13.75,4.7,false,,
-006,Tiki Bar,3,Nytorv 7,,29.00,15.50,4.6,false,,
-007,Ruby,3,Nybrogade 10,,34.00,17.50,4.9,true,17:00,19:00
-008,The Viking,1,Møllestien 12,36.75,24.50,11.25,4.4,true,18:00,22:00
-009,The Rooftop Lounge,3,Østergade 52,,,,4.2,false,19:00,21:00
-010,Cocktail Corner,2,Nørrebrogade 15,31.50,,10.00,4.6,true,20:00,22:00
-011,Beer Palace,3,Vesterbrogade 19,33.00,22.50,,4.3,false,,
-012,Wine Bar,1,Åboulevarden 36,,28.50,14.75,4.1,true,17:00,18:00
-013,Whiskey Lounge,2,Sankt Knuds Kirkestræde 10,39.00,,12.00,4.8,true,,
-014,The Pint,1,Havnegade 20,35.00,,10.75,4.2,false,,
-015,Café 22,3,Frederiksgade 22,33.50,26.00,13.50,4.5,true,,
-016,Red Square,2,Albani Torv 2,32.00,21.50,,4.4,false,18:00,20:00
-017,Cocktail Garden,1,Bispetorv 5,,25.00,11.50,4.3,true,,
-018,Bier Bar,3,Amagerbrogade 15,36.50,,9.50,4.7,false,,
-019,Wine & Dine,2,Skibhusvej 47,,30.50,13.75,4.6,true,19:00,21:00
-020,Pub Corner,1,Søndergade 18,34.00,24.50,,4.2,true,,
-021,The Barrel House,3,Strandgade 30,,27.50,10.25,4.5,false,17:00,19:00
-022,Lounge Eleven,2,Overgade 11,38.50,,14.00,4.1,true,,
-023,Beer Garden,1,Havnegade 15,32.50,23.00,12.50,4.3,false,18:00,21:00
-024,Café Noir,3,Gothersgade 22,,29.50,15.75,4.7,true,,
-025,The Tap Room,2,Nørregade 18,35.00,22.50,,4.6,false,20:00,22:00
-026,Cosy Corner,1,Jægergårdsgade 32,,26.00,11.00,4.4,true,,
-027,Whiskey Bar,3,Frederiks Allé 15,37.50,,10.75,4.2,false,,
-028,Wine House,1,Vestergade 20,31.00,,12.50,4.5,true,18:00,20:00
-029,The Cellar,2,Kongensgade 17,33.50,25.00,,4.1,true,,
-030,Beer Garden,3,Klostergade 12,,28.50,14.50,4.3,false,,
-031,Café Oase,1,Sønder Allé 30,36.00,23.50,,4.7,true,19:00,21:00
-032,The Lounge,2,Vindegade 6,,30.00,13.25,4.6,true,,
-033,The Tap House,1,Åboulevarden 42,30.50,21.00,12.75,4.4,false,,
-034,Wine Cellar,3,Nørregade 20,34.50,,11.25,4.9,true,17:00,19:00
-035,Pub Paradise,1,Skolegade 15,38.00,,17.50,4.2,true,,
-036,The Beer Box,3,Nybrogade 5,33.00,24.50,,4.5,false,,
-037,Cocktail Express,1,Store Torv 10,,29.00,15.50,4.1,true,18:00,20:00
-038,Whiskey Haven,2,Læssøegade 9,35.50,,10.00,4.3,true,,
-039,Wine Tavern,1,Vestergade 30,31.50,,12.75,4.7,false,,
-040,Café Deluxe,3,Søndergade 10,,27.50,14.25,4.6,true,19:00,21:00
-041,The Barrel Room,2,Nyborggade 14,34.00,22.50,13.25,4.4,true,,
-042,Beer Corner,1,Læssøesgade 22,,26.00,11.75,4.2,false,18:00,22:00
-043,Tiki Lounge,3,Gammel Torv 17,36.50,,9.50,4.5,true,,
-044,The Wine Bar,1,Nørre Allé 20,32.00,,11.25,4.3,true,17:00,19:00
-045,The Pub,2,Algade 12,39.50,25.50,,4.8,false,,
-046,Café Royale,1,Banegårdspladsen 5,35.00,24.00,10.50,4.2,true,18:00,21:00
-047,Cocktail Haven,3,Strandvejen 30,,28.50,15.75,4.5,true,,
-048,Brewery House,2,Østerbro 15,30.50,,13.00,4.1,false,19:00,22:00
-049,Beer and Bites,1,Stjernepladsen 12,33.00,23.50,12.75,4.3,true,,
-050,Wine Lounge,3,Kongens Nytorv 10,,30.00,14.25,4.7,false,,
-051,Pub 55,1,Vester Allé 25,31.50,,11.50,4.6,true,18:00,20:00
-052,The Cocktail Spot,2,Nørrebro 18,37.50,27.00,,4.4,true,,
-053,Beer House,1,Nordre Strandvej 15,35.00,26.50,13.50,4.2,false,,
-054,Café Express,3,Sankt Annæ Plads 30,,25.00,10.75,4.5,true,19:00,21:00
-055,The Whiskey Room,2,Klostertorvet 12,32.50,,9.50,4.1,true,,
-056,Wine Lounge,1,Lyngbyvej 20,34.00,,15.00,4.3,false,17:00,19:00
-057,Cocktail House,3,Vestergade 15,,27.50,11.25,4.9,true,,
-058,Pub Elite,1,Gammel Mønt 18,36.50,,12.50,4.2,true,18:00,22:00
-059,The Beer Garden,2,Svendborggade 9,30.00,22.50,,4.5,false,,
-060,The Wine Spot,1,Frederiksborggade 30,,24.00,14.50,4.1,true,18:00,20:00
-061,Whiskey Lounge,3,Havnepladsen 12,34.50,,13.25,4.4,true,,
-062,Brewery Corner,2,Jernbanegade 18,33.00,26.00,,4.3,false,,
-063,Café Vino,1,Kongensgade 30,35.50,,11.75,4.7,true,19:00,21:00
-064,The Lounge Bar,3,Sønder Alle 18,,29.50,15.25,4.6,true,,
-065,Beer Palace,1,Nørre Allé 15,32.50,23.00,10.50,4.4,false,,
-066,Wine Oasis,2,Lille Grønnegade 9,39.00,,14.00,4.2,true,,
-067,Cocktail Lounge,1,Klostertorvet 18,,26.50,12.25,4.5,true,17:00,19:00
-068,The Barrel Room,3,Frederiks Allé 20,36.50,,9.75,4.1,true,,
-069,Bier Garden,2,Vesterbro 15,30.50,24.50,,4.3,false,18:00,21:00
-070,Wine House,1,Vestergade 30,,28.50,13.75,4.7,true,,
-071,The Cellar,3,Gammel Torv 20,33.00,22.50,12.50,4.6,true,19:00,22:00
-072,The Tap Room,2,Nørregade 18,35.00,21.50,,4.4,true,,
-073,Cosy Corner,1,Jægergårdsgade 32,,27.00,11.25,4.2,false,18:00,20:00
-074,Whiskey Bar,3,Frederiks Allé 15,37.50,,10.75,4.5,true,,
-075,Wine House,1,Vestergade 20,31.00,,12.50,4.1,true,17:00,19:00
-076,The Cellar,2,Kongensgade 17,33.50,25.00,,4.3,true,,
-077,Beer Garden,3,Klostergade 12,,29.00,14.50,4.7,false,,
-078,Café Oase,1,Sønder Allé 30,36.00,23.50,,4.6,true,19:00,21:00
-079,The Lounge,2,Vindegade 6,,30.00,13.25,4.4,true,,
-080,The Tap House,1,Åboulevarden 42,30.50,21.00,12.75,4.3,false,,
-081,Wine Cellar,3,Nørregade 20,34.50,,11.25,4.9,true,17:00,19:00
-082,Pub Paradise,1,Skolegade 15,38.00,,17.50,4.2,true,,
-083,The Beer Box,3,Nybrogade 5,33.00,24.50,,4.5,false,,
-084,Cocktail Express,1,Store Torv 10,,29.00,15.50,4.1,true,18:00,20:00
-085,Whiskey Haven,2,Læssøegade 9,35.50,,10.00,4.3,true,,
-086,Wine Tavern,1,Vestergade 30,31.50,,12.75,4.7,false,,
-087,Café Deluxe,3,Søndergade 10,,27.50,14.25,4.6,true,19:00,21:00
-088,The Barrel Room,2,Nyborggade 14,34.00,22.50,13.25,4.4,true,,
-089,Beer Corner,1,Læssøesgade 22,,26.00,11.75,4.2,false,18:00,22:00
-090,Tiki Lounge,3,Gammel Torv 17,36.50,,9.50,4.5,true,,
-091,The Wine Bar,1,Nørre Allé 20,32.00,,11.25,4.3,true,17:00,19:00
-092,The Pub,2,Algade 12,39.50,25.50,,4.8,false,,
-093,Café Royale,1,Banegårdspladsen 5,35.00,24.00,10.50,4.2,true,18:00,21:00
-094,Cocktail Haven,3,Strandvejen 30,,28.50,15.75,4.5,true,,
-095,Brewery House,2,Østerbro 15,30.50,,13.00,4.1,false,19:00,22:00
-096,Beer and Bites,1,Stjernepladsen 12,33.00,23.50,,4.3,true,,
-097,Wine Lounge,3,Kongens Nytorv 10,,30.00,14.25,4.7,false,,
-098,Pub 55,1,Vester Allé 25,31.50,,11.50,4.6,true,18:00,20:00
-099,The Cocktail Spot,2,Nørrebro 18,37.50,27.00,,4.4,true,,
-100,Beer House,1,Nordre Strandvej 15,35.00,26.50,13.50,4.2,false,,
+001,The Old Irish Pub,Aarhus,Studsgade 31,35.50,,9.75,4.2,true,18:00,19:00
+002,Bar Central,Aarhus,Vesterbro 62,40.00,25.00,12.50,4.5,,,
+003,Café Kafka,Aarhus,Nørregade 45,,28.00,14.50,4.1,true,18:00,20:00
+004,Brooklyn Bar,Odense,Vestergade 68,30.00,26.50,,4.3,true,,
+005,Hop House,Odense,Fynsgade 40,34.50,23.00,13.75,4.7,,,
+006,Tiki Bar,Copenhagen,Nytorv 7,,29.00,15.50,4.6,,,
+007,Ruby,Copenhagen,Nybrogade 10,,34.00,17.50,4.9,true,17:00,19:00
+008,The Viking,Aarhus,Møllestien 12,36.75,24.50,11.25,4.4,true,18:00,22:00
+009,The Rooftop Lounge,Copenhagen,Østergade 52,,,,4.2,,19:00,21:00
+010,Cocktail Corner,Odense,Nørrebrogade 15,31.50,,10.00,4.6,true,20:00,22:00
+011,Beer Palace,Copenhagen,Vesterbrogade 19,33.00,22.50,,4.3,,,
+012,Wine Bar,Aarhus,Åboulevarden 36,,28.50,14.75,4.1,true,17:00,18:00
+013,Whiskey Lounge,Odense,Sankt Knuds Kirkestræde 10,39.00,,12.00,4.8,true,,
+014,The Pint,Aarhus,Havnegade 20,35.00,,10.75,4.2,,,
+015,Café 22,Copenhagen,Frederiksgade 22,33.50,26.00,13.50,4.5,true,,
+016,Red Square,Odense,Albani Torv 2,32.00,21.50,,4.4,,18:00,20:00
+017,Cocktail Garden,Aarhus,Bispetorv 5,,25.00,11.50,4.3,true,,
+018,Bier Bar,Copenhagen,Amagerbrogade 15,36.50,,9.50,4.7,,,
+019,Wine & Dine,Odense,Skibhusvej 47,,30.50,13.75,4.6,true,19:00,21:00
+020,Pub Corner,Aarhus,Søndergade 18,34.00,24.50,,4.2,true,,
+021,The Barrel House,Copenhagen,Strandgade 30,,27.50,10.25,4.5,,17:00,19:00
+022,Lounge Eleven,Odense,Overgade 11,38.50,,14.00,4.1,true,,
+023,Beer Garden,Aarhus,Havnegade 15,32.50,23.00,12.50,4.3,,18:00,21:00
+024,Café Noir,Copenhagen,Gothersgade 22,,29.50,15.75,4.7,true,,
+025,The Tap Room,Odense,Nørregade 18,35.00,22.50,,4.6,,20:00,22:00
+026,Cosy Corner,Aarhus,Jægergårdsgade 32,,26.00,11.00,4.4,true,,
+027,Whiskey Bar,Copenhagen,Frederiks Allé 15,37.50,,10.75,4.2,,,
+028,Wine House,Aarhus,Vestergade 20,31.00,,12.50,4.5,true,18:00,20:00
+029,The Cellar,Odense,Kongensgade 17,33.50,25.00,,4.1,true,,
+030,Beer Garden,Copenhagen,Klostergade 12,,28.50,14.50,4.3,,,
+031,Café Oase,Aarhus,Sønder Allé 30,36.00,23.50,,4.7,true,19:00,21:00
+032,The Lounge,Odense,Vindegade 6,,30.00,13.25,4.6,true,,
+033,The Tap House,Aarhus,Åboulevarden 42,30.50,21.00,12.75,4.4,,,
+034,Wine Cellar,Copenhagen,Nørregade 20,34.50,,11.25,4.9,true,17:00,19:00
+035,Pub Paradise,Aarhus,Skolegade 15,38.00,,17.50,4.2,true,,
+036,The Beer Box,Copenhagen,Nybrogade 5,33.00,24.50,,4.5,,,
+037,Cocktail Express,Aarhus,Store Torv 10,,29.00,15.50,4.1,true,18:00,20:00
+038,Whiskey Haven,Odense,Læssøegade 9,35.50,,10.00,4.3,true,,
+039,Wine Tavern,Aarhus,Vestergade 30,31.50,,12.75,4.7,,,
+040,Café Deluxe,Copenhagen,Søndergade 10,,27.50,14.25,4.6,true,19:00,21:00
+041,The Barrel Room,Odense,Nyborggade 14,34.00,22.50,13.25,4.4,true,,
+042,Beer Corner,Aarhus,Læssøesgade 22,,26.00,11.75,4.2,,18:00,22:00
+043,Tiki Lounge,Copenhagen,Gammel Torv 17,36.50,,9.50,4.5,true,,
+044,The Wine Bar,Aarhus,Nørre Allé 20,32.00,,11.25,4.3,true,17:00,19:00
+045,The Pub,Odense,Algade 12,39.50,25.50,,4.8,,,
+046,Café Royale,Aarhus,Banegårdspladsen 5,35.00,24.00,10.50,4.2,true,18:00,21:00
+047,Cocktail Haven,Copenhagen,Strandvejen 30,,28.50,15.75,4.5,true,,
+048,Brewery House,Odense,Østerbro 15,30.50,,13.00,4.1,,19:00,22:00
+049,Beer and Bites,Aarhus,Stjernepladsen 12,33.00,23.50,12.75,4.3,true,,
+050,Wine Lounge,Copenhagen,Kongens Nytorv 10,,30.00,14.25,4.7,,,
+051,Pub 55,Aarhus,Vester Allé 25,31.50,,11.50,4.6,true,18:00,20:00
+052,The Cocktail Spot,Odense,Nørrebro 18,37.50,27.00,,4.4,true,,
+053,Beer House,Aarhus,Nordre Strandvej 15,35.00,26.50,13.50,4.2,,,
+054,Café Express,Copenhagen,Sankt Annæ Plads 30,,25.00,10.75,4.5,true,19:00,21:00
+055,The Whiskey Room,Odense,Klostertorvet 12,32.50,,9.50,4.1,true,,
+056,Wine Lounge,Aarhus,Lyngbyvej 20,34.00,,15.00,4.3,,17:00,19:00
+057,Cocktail House,Copenhagen,Vestergade 15,,27.50,11.25,4.9,true,,
+058,Pub Elite,Aarhus,Gammel Mønt 18,36.50,,12.50,4.2,true,18:00,22:00
+059,The Beer Garden,Odense,Svendborggade 9,30.00,22.50,,4.5,,,
+060,The Wine Spot,Aarhus,Frederiksborggade 30,,24.00,14.50,4.1,true,18:00,20:00
+061,Whiskey Lounge,Copenhagen,Havnepladsen 12,34.50,,13.25,4.4,true,,
+062,Brewery Corner,Odense,Jernbanegade 18,33.00,26.00,,4.3,,,
+063,Café Vino,Aarhus,Kongensgade 30,35.50,,11.75,4.7,true,19:00,21:00
+064,The Lounge Bar,Copenhagen,Sønder Alle 18,,29.50,15.25,4.6,true,,
+065,Beer Palace,Aarhus,Nørre Allé 15,32.50,23.00,10.50,4.4,,,
+066,Wine Oasis,Odense,Lille Grønnegade 9,39.00,,14.00,4.2,true,,
+067,Cocktail Lounge,Aarhus,Klostertorvet 18,,26.50,12.25,4.5,true,17:00,19:00
+068,The Barrel Room,Copenhagen,Frederiks Allé 20,36.50,,9.75,4.1,true,,
+069,Bier Garden,Odense,Vesterbro 15,30.50,24.50,,4.3,,18:00,21:00
+070,Wine House,Aarhus,Vestergade 30,,28.50,13.75,4.7,true,,
+071,The Cellar,Copenhagen,Gammel Torv 20,33.00,22.50,12.50,4.6,true,19:00,22:00
+072,The Tap Room,Odense,Nørregade 18,35.00,21.50,,4.4,true,,
+073,Cosy Corner,Aarhus,Jægergårdsgade 32,,27.00,11.25,4.2,,18:00,20:00
+074,Whiskey Bar,Copenhagen,Frederiks Allé 15,37.50,,10.75,4.5,true,,
+075,Wine House,Aarhus,Vestergade 20,31.00,,12.50,4.1,true,17:00,19:00
+076,The Cellar,Odense,Kongensgade 17,33.50,25.00,,4.3,true,,
+077,Beer Garden,Copenhagen,Klostergade 12,,29.00,14.50,4.7,,,
+078,Café Oase,Aarhus,Sønder Allé 30,36.00,23.50,,4.6,true,19:00,21:00
+079,The Lounge,Odense,Vindegade 6,,30.00,13.25,4.4,true,,
+080,The Tap House,Aarhus,Åboulevarden 42,30.50,21.00,12.75,4.3,,,
+081,Wine Cellar,Copenhagen,Nørregade 20,34.50,,11.25,4.9,true,17:00,19:00
+082,Pub Paradise,Aarhus,Skolegade 15,38.00,,17.50,4.2,true,,
+083,The Beer Box,Copenhagen,Nybrogade 5,33.00,24.50,,4.5,,,
+084,Cocktail Express,Aarhus,Store Torv 10,,29.00,15.50,4.1,true,18:00,20:00
+085,Whiskey Haven,Odense,Læssøegade 9,35.50,,10.00,4.3,true,,
+086,Wine Tavern,Aarhus,Vestergade 30,31.50,,12.75,4.7,,,
+087,Café Deluxe,Copenhagen,Søndergade 10,,27.50,14.25,4.6,true,19:00,21:00
+088,The Barrel Room,Odense,Nyborggade 14,34.00,22.50,13.25,4.4,true,,
+089,Beer Corner,Aarhus,Læssøesgade 22,,26.00,11.75,4.2,,18:00,22:00
+090,Tiki Lounge,Copenhagen,Gammel Torv 17,36.50,,9.50,4.5,true,,
+091,The Wine Bar,Aarhus,Nørre Allé 20,32.00,,11.25,4.3,true,17:00,19:00
+092,The Pub,Odense,Algade 12,39.50,25.50,,4.8,,,
+093,Café Royale,Aarhus,Banegårdspladsen 5,35.00,24.00,10.50,4.2,true,18:00,21:00
+094,Cocktail Haven,Copenhagen,Strandvejen 30,,28.50,15.75,4.5,true,,
+095,Brewery House,Odense,Østerbro 15,30.50,,13.00,4.1,,19:00,22:00
+096,Beer and Bites,Aarhus,Stjernepladsen 12,33.00,23.50,,4.3,true,,
+097,Wine Lounge,Copenhagen,Kongens Nytorv 10,,30.00,14.25,4.7,,,
+098,Pub 55,Aarhus,Vester Allé 25,31.50,,11.50,4.6,true,18:00,20:00
+099,The Cocktail Spot,Odense,Nørrebro 18,37.50,27.00,,4.4,true,,
+100,Beer House,Aarhus,Nordre Strandvej 15,35.00,26.50,13.50,4.2,,,
