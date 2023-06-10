@@ -30,6 +30,14 @@
         max-width: 100%;
     }
 
+    .topright {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        font-size: 18px;
+        max-width: 8%;
+    }
+
 </style>
 <body>
     <h1 class="question">Feeling thirsty?</h1>
@@ -42,6 +50,7 @@
                 <a href="{{ url_for('are_you_sure') }}" class="answer" style="text-align:center; text-decoration:none; color:#FF1919"><h1>No</h1></a>
             </li>
         </ul>
+        <a href="{{ url_for('login') }}"><img src="static/login.png" alt="Login" class="topright"></a>
     <img src="static/drink.gif" class="gif"/>
 </body>
 

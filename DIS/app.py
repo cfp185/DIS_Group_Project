@@ -62,6 +62,18 @@ def mind():
         "mind.html"
     )
 
+@app.route("/login")
+def login():
+    return render_template(
+        "login.html"
+    )
+
+@app.route("/toobad")
+def too_bad():
+    return render_template(
+        "toobad.html"
+    )
+
 if __name__ == '__main__':
     app.debug=True
     app.run(port=5001)
