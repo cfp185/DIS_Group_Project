@@ -1,101 +1,156 @@
-ID,Name,City,Address,Beer_Price,Wine_Price,Cocktail_Price,Rating,Table_Booking,Happy_Hour_Start, Happy_Hour_End
-001,The Old Irish Pub,Aarhus,Studsgade 31,35.50,,9.75,4.2,true,18:00,19:00
-002,Bar Central,Aarhus,Vesterbro 62,40.00,25.00,12.50,4.5,,,
-003,Café Kafka,Aarhus,Nørregade 45,,28.00,14.50,4.1,true,18:00,20:00
-004,Brooklyn Bar,Odense,Vestergade 68,30.00,26.50,,4.3,true,,
-005,Hop House,Odense,Fynsgade 40,34.50,23.00,13.75,4.7,,,
-006,Tiki Bar,Copenhagen,Nytorv 7,,29.00,15.50,4.6,,,
-007,Ruby,Copenhagen,Nybrogade 10,,34.00,17.50,4.9,true,17:00,19:00
-008,The Viking,Aarhus,Møllestien 12,36.75,24.50,11.25,4.4,true,18:00,22:00
-009,The Rooftop Lounge,Copenhagen,Østergade 52,,,,4.2,,19:00,21:00
-010,Cocktail Corner,Odense,Nørrebrogade 15,31.50,,10.00,4.6,true,20:00,22:00
-011,Beer Palace,Copenhagen,Vesterbrogade 19,33.00,22.50,,4.3,,,
-012,Wine Bar,Aarhus,Åboulevarden 36,,28.50,14.75,4.1,true,17:00,18:00
-013,Whiskey Lounge,Odense,Sankt Knuds Kirkestræde 10,39.00,,12.00,4.8,true,,
-014,The Pint,Aarhus,Havnegade 20,35.00,,10.75,4.2,,,
-015,Café 22,Copenhagen,Frederiksgade 22,33.50,26.00,13.50,4.5,true,,
-016,Red Square,Odense,Albani Torv 2,32.00,21.50,,4.4,,18:00,20:00
-017,Cocktail Garden,Aarhus,Bispetorv 5,,25.00,11.50,4.3,true,,
-018,Bier Bar,Copenhagen,Amagerbrogade 15,36.50,,9.50,4.7,,,
-019,Wine & Dine,Odense,Skibhusvej 47,,30.50,13.75,4.6,true,19:00,21:00
-020,Pub Corner,Aarhus,Søndergade 18,34.00,24.50,,4.2,true,,
-021,The Barrel House,Copenhagen,Strandgade 30,,27.50,10.25,4.5,,17:00,19:00
-022,Lounge Eleven,Odense,Overgade 11,38.50,,14.00,4.1,true,,
-023,Beer Garden,Aarhus,Havnegade 15,32.50,23.00,12.50,4.3,,18:00,21:00
-024,Café Noir,Copenhagen,Gothersgade 22,,29.50,15.75,4.7,true,,
-025,The Tap Room,Odense,Nørregade 18,35.00,22.50,,4.6,,20:00,22:00
-026,Cosy Corner,Aarhus,Jægergårdsgade 32,,26.00,11.00,4.4,true,,
-027,Whiskey Bar,Copenhagen,Frederiks Allé 15,37.50,,10.75,4.2,,,
-028,Wine House,Aarhus,Vestergade 20,31.00,,12.50,4.5,true,18:00,20:00
-029,The Cellar,Odense,Kongensgade 17,33.50,25.00,,4.1,true,,
-030,Beer Garden,Copenhagen,Klostergade 12,,28.50,14.50,4.3,,,
-031,Café Oase,Aarhus,Sønder Allé 30,36.00,23.50,,4.7,true,19:00,21:00
-032,The Lounge,Odense,Vindegade 6,,30.00,13.25,4.6,true,,
-033,The Tap House,Aarhus,Åboulevarden 42,30.50,21.00,12.75,4.4,,,
-034,Wine Cellar,Copenhagen,Nørregade 20,34.50,,11.25,4.9,true,17:00,19:00
-035,Pub Paradise,Aarhus,Skolegade 15,38.00,,17.50,4.2,true,,
-036,The Beer Box,Copenhagen,Nybrogade 5,33.00,24.50,,4.5,,,
-037,Cocktail Express,Aarhus,Store Torv 10,,29.00,15.50,4.1,true,18:00,20:00
-038,Whiskey Haven,Odense,Læssøegade 9,35.50,,10.00,4.3,true,,
-039,Wine Tavern,Aarhus,Vestergade 30,31.50,,12.75,4.7,,,
-040,Café Deluxe,Copenhagen,Søndergade 10,,27.50,14.25,4.6,true,19:00,21:00
-041,The Barrel Room,Odense,Nyborggade 14,34.00,22.50,13.25,4.4,true,,
-042,Beer Corner,Aarhus,Læssøesgade 22,,26.00,11.75,4.2,,18:00,22:00
-043,Tiki Lounge,Copenhagen,Gammel Torv 17,36.50,,9.50,4.5,true,,
-044,The Wine Bar,Aarhus,Nørre Allé 20,32.00,,11.25,4.3,true,17:00,19:00
-045,The Pub,Odense,Algade 12,39.50,25.50,,4.8,,,
-046,Café Royale,Aarhus,Banegårdspladsen 5,35.00,24.00,10.50,4.2,true,18:00,21:00
-047,Cocktail Haven,Copenhagen,Strandvejen 30,,28.50,15.75,4.5,true,,
-048,Brewery House,Odense,Østerbro 15,30.50,,13.00,4.1,,19:00,22:00
-049,Beer and Bites,Aarhus,Stjernepladsen 12,33.00,23.50,12.75,4.3,true,,
-050,Wine Lounge,Copenhagen,Kongens Nytorv 10,,30.00,14.25,4.7,,,
-051,Pub 55,Aarhus,Vester Allé 25,31.50,,11.50,4.6,true,18:00,20:00
-052,The Cocktail Spot,Odense,Nørrebro 18,37.50,27.00,,4.4,true,,
-053,Beer House,Aarhus,Nordre Strandvej 15,35.00,26.50,13.50,4.2,,,
-054,Café Express,Copenhagen,Sankt Annæ Plads 30,,25.00,10.75,4.5,true,19:00,21:00
-055,The Whiskey Room,Odense,Klostertorvet 12,32.50,,9.50,4.1,true,,
-056,Wine Lounge,Aarhus,Lyngbyvej 20,34.00,,15.00,4.3,,17:00,19:00
-057,Cocktail House,Copenhagen,Vestergade 15,,27.50,11.25,4.9,true,,
-058,Pub Elite,Aarhus,Gammel Mønt 18,36.50,,12.50,4.2,true,18:00,22:00
-059,The Beer Garden,Odense,Svendborggade 9,30.00,22.50,,4.5,,,
-060,The Wine Spot,Aarhus,Frederiksborggade 30,,24.00,14.50,4.1,true,18:00,20:00
-061,Whiskey Lounge,Copenhagen,Havnepladsen 12,34.50,,13.25,4.4,true,,
-062,Brewery Corner,Odense,Jernbanegade 18,33.00,26.00,,4.3,,,
-063,Café Vino,Aarhus,Kongensgade 30,35.50,,11.75,4.7,true,19:00,21:00
-064,The Lounge Bar,Copenhagen,Sønder Alle 18,,29.50,15.25,4.6,true,,
-065,Beer Palace,Aarhus,Nørre Allé 15,32.50,23.00,10.50,4.4,,,
-066,Wine Oasis,Odense,Lille Grønnegade 9,39.00,,14.00,4.2,true,,
-067,Cocktail Lounge,Aarhus,Klostertorvet 18,,26.50,12.25,4.5,true,17:00,19:00
-068,The Barrel Room,Copenhagen,Frederiks Allé 20,36.50,,9.75,4.1,true,,
-069,Bier Garden,Odense,Vesterbro 15,30.50,24.50,,4.3,,18:00,21:00
-070,Wine House,Aarhus,Vestergade 30,,28.50,13.75,4.7,true,,
-071,The Cellar,Copenhagen,Gammel Torv 20,33.00,22.50,12.50,4.6,true,19:00,22:00
-072,The Tap Room,Odense,Nørregade 18,35.00,21.50,,4.4,true,,
-073,Cosy Corner,Aarhus,Jægergårdsgade 32,,27.00,11.25,4.2,,18:00,20:00
-074,Whiskey Bar,Copenhagen,Frederiks Allé 15,37.50,,10.75,4.5,true,,
-075,Wine House,Aarhus,Vestergade 20,31.00,,12.50,4.1,true,17:00,19:00
-076,The Cellar,Odense,Kongensgade 17,33.50,25.00,,4.3,true,,
-077,Beer Garden,Copenhagen,Klostergade 12,,29.00,14.50,4.7,,,
-078,Café Oase,Aarhus,Sønder Allé 30,36.00,23.50,,4.6,true,19:00,21:00
-079,The Lounge,Odense,Vindegade 6,,30.00,13.25,4.4,true,,
-080,The Tap House,Aarhus,Åboulevarden 42,30.50,21.00,12.75,4.3,,,
-081,Wine Cellar,Copenhagen,Nørregade 20,34.50,,11.25,4.9,true,17:00,19:00
-082,Pub Paradise,Aarhus,Skolegade 15,38.00,,17.50,4.2,true,,
-083,The Beer Box,Copenhagen,Nybrogade 5,33.00,24.50,,4.5,,,
-084,Cocktail Express,Aarhus,Store Torv 10,,29.00,15.50,4.1,true,18:00,20:00
-085,Whiskey Haven,Odense,Læssøegade 9,35.50,,10.00,4.3,true,,
-086,Wine Tavern,Aarhus,Vestergade 30,31.50,,12.75,4.7,,,
-087,Café Deluxe,Copenhagen,Søndergade 10,,27.50,14.25,4.6,true,19:00,21:00
-088,The Barrel Room,Odense,Nyborggade 14,34.00,22.50,13.25,4.4,true,,
-089,Beer Corner,Aarhus,Læssøesgade 22,,26.00,11.75,4.2,,18:00,22:00
-090,Tiki Lounge,Copenhagen,Gammel Torv 17,36.50,,9.50,4.5,true,,
-091,The Wine Bar,Aarhus,Nørre Allé 20,32.00,,11.25,4.3,true,17:00,19:00
-092,The Pub,Odense,Algade 12,39.50,25.50,,4.8,,,
-093,Café Royale,Aarhus,Banegårdspladsen 5,35.00,24.00,10.50,4.2,true,18:00,21:00
-094,Cocktail Haven,Copenhagen,Strandvejen 30,,28.50,15.75,4.5,true,,
-095,Brewery House,Odense,Østerbro 15,30.50,,13.00,4.1,,19:00,22:00
-096,Beer and Bites,Aarhus,Stjernepladsen 12,33.00,23.50,,4.3,true,,
-097,Wine Lounge,Copenhagen,Kongens Nytorv 10,,30.00,14.25,4.7,,,
-098,Pub 55,Aarhus,Vester Allé 25,31.50,,11.50,4.6,true,18:00,20:00
-099,The Cocktail Spot,Odense,Nørrebro 18,37.50,27.00,,4.4,true,,
-100,Beer House,Aarhus,Nordre Strandvej 15,35.00,26.50,13.50,4.2,,,
+id,name,city,address,beer,wine,cocktail,table_booking
+001,Axelborg Bodega,Copenhagen,Vesterbrogade 4,30.5,70.0,,true
+002,Café Victoria,Copenhagen,Vesterbrogade 2,32.25,62.5,147.0,true
+003,Charlie's Bar,Copenhagen,Pilestræde 33,35.75,75.5,150.25,true
+004,Dr. Nielsen Bar,Copenhagen,Istedgade 96,29.25,89.75,164.5,true
+005,Envy Bar,Copenhagen,Larsbjørnsstræde 23,34.0,,146.75,true
+006,Floss Bar,Copenhagen,Store Kongensgade 32,31.5,71.25,85.75,false
+007,GILT Bar,Copenhagen,Nybrogade 10,37.25,,166.50,true
+008,Harbo Bar,Copenhagen,Ved Stranden 18,33.0,,128.5,true
+009,John's Bar,Copenhagen,Kompagnistræde 6,30.75,80.5,125.0,false
+010,Kassen Bar,Copenhagen,Nyhavn 20,34.5,60.25,149.0,true
+011,Lidkoeb,Copenhagen,Vesterbrogade 72B,32.75,72.75,,false
+012,Mikropolis,Copenhagen,Vendersgade 22,36.25,76.75,,true
+013,Noho Bar,Copenhagen,Nørre Farimagsgade 41,29.75,59.25,112.4,true
+014,Pacific Cocktail Bar,Copenhagen,Vesterbrogade 3,31.0,70.75,145.5,true
+015,Quench Bar,Copenhagen,Tordenskjoldsgade 15,34.75,,136.25,false
+016,Ruby,Copenhagen,Nybrogade 10,38.5,78.25,,true
+017,Salon 39,Copenhagen,Kronprinsessegade 39,33.25,63.0,147.75,false
+018,Taphouse,Copenhagen,Lavendelstræde 15,30.0,89.5,124.25,true
+019,Underbar,Copenhagen,Nørre Farimagsgade 41,35.0,75.0,,true
+020,Videodrome Bar,Copenhagen,Kronprinsensgade 15,32.5,62.5,197.25,true
+021,Whammy Bar,Copenhagen,Kompagnistræde 20,37.5,77.5,192.25,false
+022,XO Bar,Copenhagen,Vesterbrogade 3,31.75,71.75,166.5,true
+023,Yum Bar,Copenhagen,Vesterbrogade 2,35.25,65.25,,true
+024,Zefside,Copenhagen,Vestergade 3,29.75,,135.75,false
+025,Ørsted Ølbar,Copenhagen,Grønnegade 25,33.5,83.25,128.0,true
+026,Arch Bar,Aarhus,Sønder Allé 9,36.75,76.5,,true
+027,Barista,Aarhus,Vester Allé 2,31.25,81.0,,true
+028,Café Gemmestedet,Aarhus,Skolegade 23,35.0,85.0,167.75,true
+029,Der Gule Under Jakobs Kælder,Aarhus,Lille Torv 5,29.5,79.25,164.0,true
+030,Enomania,Aarhus,Torvegade 65,34.25,74.25,129.0,false
+031,Fatter Eskil,Aarhus,Rosenkrantzgade 21,37.75,77.75,145.5,true
+032,Gedulgt,Aarhus,Graven 30,32.25,82.25,130.0,true
+033,Harry's Place,Aarhus,Fredensgade 15,35.75,,110.25,true
+034,Ibyen Bar,Aarhus,Nørregade 32,30.25,80.25,,true
+035,Jägergårdsgade Bar,Aarhus,Jægergårdsgade 12,33.75,,117.25,true
+036,Kwok's Bar,Aarhus,Møllegade 27,38.5,98.5,110.25,true
+037,La Cabra,Aarhus,Graven 22,31.0,71.0,,true
+038,MexiBar,Aarhus,Nørre Allé 55,34.5,84.5,,true
+039,Nedenunder,Aarhus,Jægergårdsgade 20,38.0,88.0,157.75,true
+040,Old Irish Pub,Aarhus,Store Torv 5,32.5,82.5,,true
+041,Parterre,Aarhus,Graven 22,35.0,105.0,149.75,true
+042,Queen's Pub,Aarhus,Åboulevarden 2,30.75,70.75,,true
+043,Rendezvous,Aarhus,Vester Allé 15,33.25,,147.75,true
+044,Steff's Place,Aarhus,Jægergårdsgade 6,37.0,,151.5,false
+045,The Australian,Aarhus,Åboulevarden 34,31.5,81.5,136.25,true
+046,Undergrunden,Aarhus,Åboulevarden 20,34.75,,139.25,true
+047,Victor's Vinstue,Aarhus,Nedenunder 9,29.25,99.25,,false
+048,Waoo Bar,Aarhus,Søndergade 20,32.75,72.75,147.5,true
+049,X-Bar,Aarhus,Åboulevarden 15,36.25,86.25,,true
+050,Yummi,Aarhus,Jægergårdsgade 8,29.75,79.75,144.5,false
+051,The Barking Dog,Copenhagen,Esplanaden 5,35.5,65.25,144.0,true
+052,Bo-Bi Bar,Copenhagen,Istedgade 112,31.25,,156.75,true
+053,Carlsens Bar,Copenhagen,Nørrebrogade 15,34.75,84.5,,true
+054,Darling Cellar Bar,Copenhagen,Larsbjørnsstræde 20,38.25,88.0,96.75,true
+055,El Tapeo,Copenhagen,Tordenskjoldsgade 21,30.75,70.5,99.25,true
+056,Fat Cat Bar,Copenhagen,Landemærket 3,33.25,,137.75,false
+057,Gin og Tonic Bar,Copenhagen,Istedgade 13,,89.50,121.5,true
+058,Happy Hour Bar,Copenhagen,Kompagnistræde 22,31.25,71.0,,true
+059,Isbjørnen Bar,Copenhagen,Hyskenstræde 8,34.75,,149.25,false
+060,Jolene Bar,Copenhagen,Flæsketorvet 81-85,29.25,,144.75,false
+061,Kulør Bar,Copenhagen,Pilestræde 33,32.75,72.75,147.5,true
+062,Lion's Bar,Copenhagen,Nyhavn 71,37.25,,151.75,true
+063,Moonshine Bar,Copenhagen,Lavendelstræde 17,30.75,60.75,,true
+064,Night Fever Bar,Copenhagen,Istedgade 20,35,,149.2,false
+065,The Orient Bar,Copenhagen,Vesterbrogade 20,29.75,99.75,123.5,true
+066,Penthouse Bar,Copenhagen,Store Kongensgade 23,33.25,,90.75,true
+067,Quirky Cocktails,Copenhagen,Gråbrødretorv 11,36.75,,151.25,true
+068,Relax Bar,Copenhagen,Hyskenstræde 3,31.5,,126.0,true
+069,Sippin' Safari,Copenhagen,Peder Hvitfeldts Stræde 10,35.0,,129.5,false
+070,The Tippler's Tavern,Copenhagen,Landemærket 3,30.25,80.25,144.75,true
+071,Underwood Bar,Copenhagen,Bankager 2,33.75,73.75,148.5,true
+072,Viking Bar,Copenhagen,Vesterbrogade 15,38.25,68.25,152.75,true
+073,Wild Side Bar,Copenhagen,Peder Hvitfeldts Stræde 12,31.75,71.75,,true
+074,Xenon Bar,Copenhagen,Hyskenstræde 7,34.25,74.25,,true
+075,Yard Bar,Copenhagen,Lavendelstræde 19,29.75,89.75,124.5,true
+076,Zenith Bar,Copenhagen,Store Kongensgade 17,32.25,92.25,127.0,true
+077,Ølsnedkeren,Copenhagen,Vesterbrogade 29,36.75,81.25,68.5,true
+078,Ace of Spades Bar,Aarhus,Pustervig 8,31.5,,146.0,true
+079,Bar Rouge,Aarhus,Skolegade 17,34.75,74.75,139.5,false
+080,Café Stiften,Aarhus,Store Torv 5,29.25,79.25,,true
+081,Downtown,Aarhus,Jægergårdsgade 1,33.75,,137.25,true
+082,El Desperado,Aarhus,Pustervig 8,37.25,67.25,111.75,false
+083,Fish & Beer,Aarhus,Nørre Allé 52,30.75,90.75,,true
+084,Greenwood Bar,Aarhus,Vestergade 8,35.25,,119.75,true
+085,Hopballe Mølle,Aarhus,Torvegade 65,29.75,,114.25,false
+086,Ipanema,Aarhus,Nørregade 24,32.25,102.25,127.0,true
+087,Jungle Juice,Aarhus,Graven 28,37.75,97.75,142.5,true
+088,Kornøl Bar,Aarhus,Åboulevarden 28,31.25,81.25,,true
+089,Lucky Duck,Aarhus,Møllegade 24,34.75,,103.25,true
+090,MexiCali,Aarhus,Graven 24,29.25,69.25,82.0,false
+091,Noble Rot,Aarhus,Jægergårdsgade 14,33.75,73.75,,true
+092,O'Learys,Aarhus,Banegårdspladsen 12,38.25,78.25,102.75,true
+093,Park Café,Aarhus,Marselisborg Havnevej 20,31.75,71.75,,true
+094,Queen's Bar,Aarhus,Åboulevarden 8,35.25,75.25,120.0,true
+095,Ra Bar,Aarhus,Åboulevarden 4,29.75,79.75,,true
+096,Stefanos,Aarhus,Pustervig 2,34.25,74.25,149.0,true
+097,The V Bar,Aarhus,Vestergade 2,38.75,78.75,153.5,false
+098,Warehouse,Aarhus,Jægergårdsgade 14,31.5,71.5,126.25,true
+099,Xanadu Bar,Aarhus,Møllegade 18,35.0,85.0,,false
+100,Y-Not Bar,Aarhus,Pustervig 10,30.5,,125.5,true
+101,John Bull Pub,Odense,Vestergade 21,30.25,,105.75,true
+102,Blomsten Bar,Odense,Kongensgade 50,34.75,,99.25,true
+103,Bar Ravelin,Odense,Munke Mose Allé 23,29.75,99.75,164.5,true
+104,The Old Irish Pub,Odense,Overgade 48,33.25,,147.75,true
+105,Bodega Burger Bar,Odense,Vestergade 40,37.75,,142.25,true
+106,Høkeren,Odense,Jernbanegade 11,31.25,71.25,,true
+107,Karrusellen Bar,Odense,Kongensgade 15,35.75,75.75,,false
+108,The Whisky Room,Odense,Vestergade 28,30.25,,115.75,true
+109,Café Biografen,Odense,Jernbanegade 20,34.75,74.75,109.5,true
+120,Den Glade Viking,Odense,Vestergade 63,38.25,68.25,122.75,true
+111,Bodega 5,Odense,Kongensgade 35,31.75,,146.25,true
+112,Baren,Odense,Vestergade 42,35.25,75.25,150.0,false
+113,Pavillonen,Odense,Havnegade 12,29.75,79.75,,true
+114,Lucky Duck,Odense,Vestergade 19,34.25,,149.0,false
+115,Midnight Bar,Odense,Kongensgade 25,38.75,88.75,157.5,true
+116,The Tipsy Teapot,Odense,Vestergade 32,31.5,71.5,116.25,true
+117,Bodega V,Odense,Kongensgade 10,35.0,75.0,,true
+118,Paddy's Irish Pub,Odense,Overgade 14,30.5,,135.5,false
+119,Studenterhuset,Odense,Amfipladsen 6,34.0,74.0,148.5,true
+120,Café Fridolin,Odense,Vestergade 57,29.5,,144.5,true
+121,Bar de Ville,Odense,Hans Jensens Stræde 14,33.0,,147.5,true
+122,Bodega Smagløs,Odense,Sortebrødre Torv 4,37.5,,112.0,false
+123,Café Kræz,Odense,Vestergade 65,31.0,81.0,105.5,true
+124,The Three Lions,Odense,Munke Mose Allé 15,35.5,85.5,120.25,true
+125,Temple Bar,Odense,Vestergade 24,38.0,88.0,152.5,false
+126,The Drunken Flamingo,Odense,Kongensgade 45,29.5,,154.5,true
+127,Under Bunden,Odense,Nørregade 27,33.0,,127.5,true
+128,Bodega Strandlyst,Odense,Hjallesevej 70,37.5,,122.0,true
+129,Café Glad,Odense,Vestergade 53,30.0,70.0,95.5,true
+130,Taphouse,Odense,Kongensgade 18,34.5,84.5,149.0,true
+131,Kompasset,Odense,Gråbrødrestræde 17,38.0,78.0,112.5,true
+132,The Ginger Viking,Odense,Vestergade 36,29.0,69.0,,true
+133,Hos Sofie,Odense,Overgade 35,33.5,,147.0,true
+134,Siddis,Odense,Kongensgade 5,37.0,,124.5,true
+135,Bodega 19,Odense,Vestergade 47,30.5,60.5,,true
+136,Café Barrock,Odense,Jernbanegade 15,34.0,,182.5,true
+137,Morseringen,Odense,Munke Mose Allé 11,38.5,98.5,120.0,true
+138,Bodega Katten,Odense,Vestergade 30,29.0,89.0,80.5,false
+139,Café Fridolin 2,Odense,Sortebrødre Torv 8,33.5,73.5,,true
+140,The Barrel,Odense,Overgade 25,37.0,100.0,81.5,true
+141,The Pint,Odense,Vestergade 44,30.5,,95.5,true
+142,Café Enou,Odense,Kongensgade 38,34.0,,109.0,true
+143,Bodegaen,Odense,Vestergade 13,38.5,78.5,153.0,true
+144,The Jolly Rodger,Odense,Overgade 19,29.0,79.0,,true
+145,Hos Sven,Odense,Kongensgade 32,33.5,73.5,,true
+146,Café Nelson,Odense,Vestergade 49,37.0,117.0,151.5,true
+147,Bodegaen ved Søen,Odense,Flakhaven 6,30.5,110.5,,false
+148,Stjernen,Odense,Overgade 29,34.0,,98.5,true
+149,The Brass Monkey,Odense,Vestergade 53,38.5,78.5,153.0,true
+150,The Beer Walk,Odense,Kongensgade 28,29.0,69.0,144.5,false
+151,Café Hygge,Odense,Vestergade 56,33.5,73.5,98.0,true
+152,The Cozy Pint,Odense,Overgade 18,37.0,67.0,151.5,false
+153,Bodega L,Odense,Sortebrødre Torv 2,30.5,60.5,,true
+154,Café Smagløs,Odense,Kongensgade 50,34.0,,148.5,true
+155,Bro Bar,Odense,Vestergade 58,38.4,,76.0,false

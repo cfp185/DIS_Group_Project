@@ -71,22 +71,19 @@ def result():
         rcity=request.form["city"]
         rdrink=request.form["drink"]
         rtable=request.form["table"]
-        print(rdrink == 'beer')
         time=datetime.datetime.now().hour
-        barquery = f"SELECT * FROM bars WHERE city = '{rcity}' AND {rdrink} IS NOT NULL"
+        barquery = f"SELECT bars.*, ratings.rating FROM bars LEFT OUTER JOIN ratings ON bars.id=ratings.id WHERE bars.city = '{rcity}' AND bars.{rdrink} IS NOT NULL"
         if rtable:
-            barquery += " AND table_booking = true"
+            barquery += " AND bars.table_booking = true"
         barquery += f" ORDER BY LEAST ({rdrink})"
-        # params= [rcity, rdrink, rdrink]
         cursor.execute(barquery)
         rows = cursor.fetchall()
-        drinkcol=0
-        if rdrink == f" {rdrink}":
+        if 'beer' == f"{rdrink}":
             drinkcol = 4
-        elif rdrink == 'wine':
-            drinkcol == 5
+        elif 'wine' == f"{rdrink}":
+            drinkcol = 5
         else: 
-            drinkcol == 6
+            drinkcol = 6
     return render_template(
         "result.html", rows=rows, drinkcol = drinkcol, drink = rdrink
     )
@@ -101,6 +98,12 @@ def are_you_sure():
 def mind():
     return render_template(
         "mind.html"
+    )
+
+@app.route("/rate", methods=["POST"])
+def rate():
+    return render_template(
+        "rate.html", id=request.form["id"]#, name=request.form["name"], address=request.form["address"]
     )
 
 # @app.route("/login")
