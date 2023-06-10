@@ -12,6 +12,7 @@ def front_page():
         "frontpage.html",
     )
 
+
 @app.route("/drink")
 def drink_type():
     return render_template(
@@ -25,7 +26,7 @@ def result():
         drink=request.form["drink"]
         table=request.form["table"]
         time=datetime.datetime.now().hour
-        print(time)
+        print(city)
     return render_template(
         "result.html"
     )
@@ -46,11 +47,11 @@ if __name__ == '__main__':
     app.debug=True
     app.run(port=5001)
     
-conn = psycopg2.connect(
-    # host='localhost',
-    port='5001',
-    database='bars',
-    user='wkl712',
-    password='1234'
-)
-cursor = conn.cursor()
+    conn = psycopg2.connect(
+        # host='localhost',
+        port='5001',
+        database='bars',
+        user='wkl712',
+        password='1234'
+    )
+    cursor = conn.cursor()
