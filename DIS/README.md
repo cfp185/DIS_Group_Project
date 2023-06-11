@@ -10,9 +10,9 @@ In addition to helping you find the perfect place to indulge, we prioritize your
 
 Get ready to embark on a delightful journey through the vibrant nightlife of Copenhagen, Odense, or Aarhus. Explore, savor, and share your experiences with the Sip'N'Save community. Let's raise a glass and toast to unforgettable moments!
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-|                                                      How to run the code                                                    |
-+-----------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------+
+|                                                      How to run the code                                                         |
++----------------------------------------------------------------------------------------------------------------------------------+
 
 
 (1) Run the code below to install the dependencies.
