@@ -11,8 +11,8 @@ a:link, a:visited {
     background-color: rgba(0, 255, 13, 0.734);
   }
     
-   body {
-  background-color: black;
+  body {
+  background-color: rgb(140, 129, 129);
   }
   
   .container{
@@ -53,7 +53,7 @@ a:link, a:visited {
     }
     
     .submit{
-          background-color: #21df14;
+    background-color: #21df14;
     margin: 0 auto;
     display: block;
     }
@@ -67,4 +67,28 @@ a:link, a:visited {
    .buttontext{
      font-family:"Lucida Console", "Courier New", monospace;
      color: #FFFFFF;
+    }
+
+    .rating {
+        unicode-bidi: bidi-override;
+        direction: rtl;
+        text-align: center;
+    }
+
+    .rating input {
+        display: none;
+    }
+
+    .rating label {
+        display: inline-block;
+        font-size: 30px;
+        padding: 0 5px;
+        color: #ccc;
+        cursor: pointer;
+    }
+
+    .rating label:hover,
+    .rating label:hover ~ label,
+    .rating input:checked ~ label {
+        color: #ffca08;
     }

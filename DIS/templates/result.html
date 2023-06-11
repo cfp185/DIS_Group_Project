@@ -1,7 +1,10 @@
 <html lang="da">
+
 <head>
+    <link rel="stylesheet" href="../static/main.css">
     <title>Results</title>
 </head>
+
 <body>
     <h1>Query Results</h1>
 
@@ -22,11 +25,22 @@
                 <td>{{ row[8] }}</td>
                 <td>{{ row[drinkcol] }}</td>
                 <td>
-                    <form action="/rate" method="post">
-                        <input type="hidden" name="id" value="{{ row[0] }}">
-                        <!-- <input type="hidden" name="name" value="{{ row[1] }}">
-                        <input type="hidden" name="address" value="{{ row[3] }}"> -->
-                        <button type="submit">Rate</button>
+                    <form action="{{url_for('update_rating')}}" method="POST">
+                        <div class="rating">
+                            <input type="radio" id="star5_{{ row[0] }}" name="rating_{{ row[0] }}" value="5" required/>
+                            <label for="star5_{{ row[0] }}" title="5 stars">&#9733;</label>
+                            <input type="radio" id="star4_{{ row[0] }}" name="rating_{{ row[0] }}" value="4" required/>
+                            <label for="star4_{{ row[0] }}" title="4 stars">&#9733;</label>
+                            <input type="radio" id="star3_{{ row[0] }}" name="rating_{{ row[0] }}" value="3" required/>
+                            <label for="star3_{{ row[0] }}" title="3 stars">&#9733;</label>
+                            <input type="radio" id="star2_{{ row[0] }}" name="rating_{{ row[0] }}" value="2" required/>
+                            <label for="star2_{{ row[0] }}" title="2 stars">&#9733;</label>
+                            <input type="radio" id="star1_{{ row[0] }}" name="rating_{{ row[0] }}" value="1" required/>
+                            <label for="star1_{{ row[0] }}" title="1 star">&#9733;</label>
+                            <input type="hidden" name="id" value="{{ row[0] }}">
+                            <input type="hidden" name="name" value="{{ row[1] }}">
+                        </div>
+                        <input type="submit" value="Submit Rating">
                     </form>
                 </td>
 -            </tr>

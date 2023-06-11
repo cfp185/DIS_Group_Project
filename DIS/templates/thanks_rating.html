@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thanks rating</title>
+</head>
+<style>
+     body {
+        background-color: black;
+    }
+
+    .question {
+        font-size: 600%;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    .answer {
+        font-size: 300%;
+        font-family:"Lucida Console", "Courier New", monospace;
+        display: block;
+        margin-left: 100;
+        margin-right: auto;
+        width: 7%;
+    }
+
+    .gif {
+        font-family:"Lucida Console", "Courier New", monospace;
+        margin-top: 80px; 
+        max-width: 100%;
+    }
+
+    .topright {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        font-size: 18px;
+        max-width: 8%;
+    }
+
+</style>
+<body>
+    <h1 class="question">Thanks for rating {{name}}</h1>
+    <body>
+        <p>
+            <a href="{{ url_for('front_page') }}">Front Page</a>
+        </p>
+    <img src="static/drink.gif" class="gif"/>
+</body>
+
+    
+
+</html>
