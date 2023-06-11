@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-from flask import Flask, render_template, url_for, request, flash, redirect
-from flask_login import login_user, current_user, logout_user, login_required
-=======
 from flask import Flask, render_template, url_for, request, flash, make_response
->>>>>>> refs/remotes/origin/main
 import psycopg2
 import datetime
 
