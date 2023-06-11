@@ -1,3 +1,20 @@
+Welcome to Sip'N'Save! Discover the best spots to enjoy your favorite beverages in Copenhagen, Odense, or Aarhus. Whether you're a wine connoisseur, a cocktail enthusiast, or a beer lover, we've got you covered. With our intuitive interface, you can easily find the perfect place to quench your thirst.
+
+Want to secure a table beforehand? No problem! Simply let us know your preferred city, beverage of choice, and whether you'd like to make a table booking. We'll provide you with a comprehensive list of options tailored to your preferences.
+
+Please note that the dataset used in Sip'N'Save is entirely fictional and should not be relied upon for real-world purposes. The information provided is for entertainment purposes only.
+
+One unique feature of Sip'N'Save is the ability to rate and review the bars you visit. Curious to see how your feedback affects the overall rating of a bar? Leave your honest review and observe the impact on its reputation.
+
+In addition to helping you find the perfect place to indulge, we prioritize your budget by sorting the results from cheapest to most expensive. By saving money on your drinks, you can enjoy your favorite beverages even more.
+
+Get ready to embark on a delightful journey through the vibrant nightlife of Copenhagen, Odense, or Aarhus. Explore, savor, and share your experiences with the Sip'N'Save community. Let's raise a glass and toast to unforgettable moments!
+
++---------------------------------------------------------------------------------------------------------------------------------+
+|                                                      How to run the code                                                        |
++---------------------------------------------------------------------------------------------------------------------------------+
+
+
 (1) Run the code below to install the dependencies.
 >$ pip install -r requirements.txt
 
