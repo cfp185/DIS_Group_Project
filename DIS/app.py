@@ -5,7 +5,6 @@ import importlib
 
 app = Flask(__name__)
 
-
 conn = psycopg2.connect(
     database='dbname', 
     user='postgres', 
@@ -14,7 +13,7 @@ conn = psycopg2.connect(
 )
 cursor = conn.cursor() 
 
-@app.route("/login", methods=['POST', 'GET'])  
+@app.route("/login", methods=['POST', 'GET'])
 def login():
     cur = conn.cursor()
     if request.method == 'POST':
@@ -33,26 +32,6 @@ def login():
 
 
     return render_template("login.html")
-
-
-# @app.route('/login', methods=['POST'])
-# def do_admin_login():
-#     cur = conn.cursor()
-#     username = request.form['username']
-#     password = request.form['password'] 
-
-#     insys = f''' SELECT * from users where username = '{username}' and password = '{password}' '''
-
-#     cur.execute(insys)
-
-#     ifcool = len(cur.fetchall()) != 0
-
-#     if ifcool:
-#         session['logged_in'] = True
-#         session['username'] = username
-#     else:
-#         flash('wrong password!')
-#     return redirect(url_for("home"))
 
 @app.route("/")
 def front_page():
@@ -137,18 +116,6 @@ def mind():
 def rate():
     return render_template(
         "rate.html", id=request.form["id"]#, name=request.form["name"], address=request.form["address"]
-    )
-
-# @app.route("/login")
-# def login():
-#     return render_template(
-#         "login.html"
-#     )
-
-@app.route("/toobad")
-def too_bad():
-    return render_template(
-        "toobad.html"
     )
 
 if __name__ == '__main__':
