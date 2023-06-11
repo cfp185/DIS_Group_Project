@@ -9,7 +9,7 @@ conn = psycopg2.connect(
     database='dbname', 
     user='postgres', 
     password='password',
-    options='-c client_encoding=utf8' 
+    options='-c client_encoding=utf8'  
 )
 cursor = conn.cursor() 
 
@@ -17,7 +17,7 @@ cursor = conn.cursor()
 def login():
     cur = conn.cursor()
     if request.method == 'POST':
-        new_username = request.form['username']
+        new_username = request.form['username'] 
         new_password = request.form['password']
         cur.execute(f'''select * from users where username = '{new_username}' ''')
         unique = cur.fetchall()
@@ -91,8 +91,9 @@ def update_rating():
         existing_rating, num_ratings = old_data
         new_num_ratings = num_ratings+1
         upd_rating = (existing_rating*num_ratings+new_rating)/(new_num_ratings)
+        rounded_value = round(upd_rating, 1)
         #If there is already a rating update the row
-        rating_query = f"UPDATE ratings SET rating = {upd_rating}, num_ratings = {new_num_ratings} WHERE id='{id}'"
+        rating_query = f"UPDATE ratings SET rating = {rounded_value}, num_ratings = {new_num_ratings} WHERE id='{id}'"
     else: 
         #If there is no existing rating insert a new row.
         rating_query = f"INSERT INTO ratings (id, rating, num_ratings) VALUES ('{id}', '{new_rating}', 1)"

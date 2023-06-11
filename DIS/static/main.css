@@ -94,7 +94,8 @@ a:link, a:visited {
 
     .result_table{
       font-family:"Lucida Console", "Courier New", monospace;
-      color:azure;
+      color:rgb(255, 255, 255);
+      margin: 0 auto;
     }
 
     .result_table td {
@@ -108,11 +109,40 @@ a:link, a:visited {
     }
 
     .result_header{
-      color:lightsalmon;
+      color:rgb(51, 16, 227);
       text-align: center;
       font-size: 50px;
     }
-  
+    .frontquestion {
+      font-size: 600%;
+      color: #FFFFFF;
+      text-align: center;
+      font-family:"Lucida Console", "Courier New", monospace;
+
+  }
+
+  .answer {
+      font-size: 300%;
+      font-family:"Lucida Console", "Courier New", monospace;
+      display: block;
+      margin-left: 100;
+      margin-right: auto;
+      width: 7%;
+  }
+
+  .gif {
+      font-family:"Lucida Console", "Courier New", monospace;
+      margin-top: 80px; 
+      max-width: 100%;
+  }
+
+  .topright {
+      position: absolute;
+      top: 8px;
+      right: 16px;
+      font-size: 18px;
+      max-width: 8%;
+  }
 
   
 

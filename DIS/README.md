@@ -33,7 +33,7 @@ IMPORTANT: In the 'create_bars.SQL' and 'create_ratings.SQL' change the director
 (3) In the app.py-file, set the parameters of the connection (line 7) to match the database name, username and password
 
 (4) Run Web-App
->$ python src/app.py
+>$ python app.py
 
 <h2>Link to the E/R Diagram</h2>
 https://github.com/cfp185/DIS_Group_Project/blob/c93d78cdcce14010c86dc666790e0279f5c4917a/DIS/ER.png

@@ -3,36 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Sip'n'Save</title>
+    <link rel="stylesheet" href="../static/main.css">
 </head>
-<style>
-     body {
-        background-color: black;
-    }
-
-    .question {
-        font-size: 600%;
-        color: #FFFFFF;
-        text-align: center;
-    }
-
-    .answer {
-        font-size: 300%;
-        font-family:"Lucida Console", "Courier New", monospace;
-        display: block;
-        margin-left: 100;
-        margin-right: auto;
-        width: 7%;
-    }
-
-    .gif {
-        font-family:"Lucida Console", "Courier New", monospace;
-        margin-top: 80px; 
-        max-width: 100%;
-    }
-
-</style>
 <body>
-    <h1 class="question">Make up your mind!</h1>
+    <h1 class="frontquestion">Make up your mind!</h1>
     <a href="{{ url_for('front_page') }}" class="answer" style="text-align:center; text-decoration:none; color:#ff0099"><h1>Okay</h1></a>
 </body>
 
