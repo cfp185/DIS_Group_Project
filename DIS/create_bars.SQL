@@ -11,4 +11,5 @@ CREATE TABLE IF NOT EXISTS bars (
 
 COPY bars (ID, Name, City, Address, beer, wine, cocktail, Table_Booking)
     FROM 'C:\Users\katja\OneDrive - University of Copenhagen\DIS\DIS_Group_Project\DIS\static\bars.csv'
-    DELIMITER ',' NULL AS '' CSV HEADER;
+    WITH (FORMAT csv, DELIMITER ',', NULL '', HEADER, ENCODING 'UTF8');
+

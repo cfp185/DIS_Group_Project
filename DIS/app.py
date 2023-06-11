@@ -1,17 +1,20 @@
 from flask import Flask, render_template, url_for, request, flash, make_response
 import psycopg2
-import datetime
+import sys
+import importlib
 
 app = Flask(__name__)
 
-conn = psycopg2.connect(
-    database='dbname',
-    user='postgres',
-    password='password'
-)
-cursor = conn.cursor()
 
-@app.route("/login", methods=['POST', 'GET'])
+conn = psycopg2.connect(
+    database='dbname', 
+    user='postgres', 
+    password='password',
+    options='-c client_encoding=utf8' 
+)
+cursor = conn.cursor() 
+
+@app.route("/login", methods=['POST', 'GET'])  
 def login():
     cur = conn.cursor()
     if request.method == 'POST':

@@ -1,20 +1,20 @@
-<html lang="da">
-
+<html lang="da"> 
 <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="../static/main.css">
     <title>Results</title>
 </head>
 
 <body>
-    <h1>Query Results</h1>
+    <h1 class="result_table result_header" >Query Results</h1>
 
-    <table>
+    <table class="result_table">
         <thead>
             <tr>
                 <th>Name</th>
                 <th>Address</th>
-                <th>Rating</th>
-                <th>Average {{drink}} price</th>
+                <th >Rating</th>
+                <th >Average {{drink}} price</th>
             </tr>
         </thead>
         <tbody>
@@ -22,7 +22,7 @@
             <tr>
                 <td>{{ row[1] }}</td>
                 <td>{{ row[3] }}</td>
-                <td>{{ row[8] }}</td>
+                <td >{{ row[8] }}</td>
                 <td>{{ row[drinkcol] }}</td>
                 <td>
                     <form action="{{url_for('update_rating')}}" method="POST">
@@ -40,7 +40,7 @@
                             <input type="hidden" name="id" value="{{ row[0] }}">
                             <input type="hidden" name="name" value="{{ row[1] }}">
                         </div>
-                        <input type="submit" value="Submit Rating">
+                        <input type="submit" value="Submit Rating" class="submit button buttontext">
                     </form>
                 </td>
 -            </tr>
