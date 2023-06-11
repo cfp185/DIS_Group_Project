@@ -36,5 +36,5 @@ IMPORTANT: In the 'create_bars.SQL' and 'create_ratings.SQL' change the director
 >$ python src/app.py
 
 <h2>E/R Diagram</h2>
-![E/R Diagram](./ER.png)
+![E/R Diagram](DIS/ER.png)
 
