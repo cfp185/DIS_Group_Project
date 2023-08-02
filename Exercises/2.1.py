@@ -2,42 +2,42 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # # a)
-# # Define the function f(x) = sin(x)
-# def f(x):
-#     return np.sin(x)
+# Define the function f(x) = sin(x)
+def f(x):
+    return np.sin(x)
 
-# # Define the analytical derivative f'(x) = cos(x)
-# def f_prime(x):
-#     return np.cos(x)
+# Define the analytical derivative f'(x) = cos(x)
+def f_prime(x):
+    return np.cos(x)
 
-# # Define the grid size
-# N = 20
-# theta = 0
+# Define the grid size
+N = 20
+theta = 0
 
 # # Create the grid
-# x = np.linspace(theta, 2 * np.pi, N, endpoint=False)
+x = np.linspace(theta, 2 * np.pi, N, endpoint=False)
 
 # # Compute the grid spacing
-# delta_x = 2 * np.pi / N
+delta_x = 2 * np.pi / N
 
-# # Evaluate the numerical derivative using the formula
-# numerical_derivative = (np.roll(f(x), -1) - f(x)) / delta_x
+# Evaluate the numerical derivative using the formula
+numerical_derivative = (np.roll(f(x), -1) - f(x)) / delta_x
 
-# # Account for periodicity by wrapping the last point to the first point
-# numerical_derivative[-1] = (f(x[0] + delta_x) - f(x[-1])) / delta_x
+# Account for periodicity by wrapping the last point to the first point
+numerical_derivative[-1] = (f(x[0] + delta_x) - f(x[-1])) / delta_x
 
-# # Compute the true derivative
-# true_derivative = f_prime(x)
+# Compute the true derivative
+true_derivative = f_prime(x)
 
-# # Plot the results
-# plt.plot(x, numerical_derivative, label='Numerical Derivative')
-# plt.plot(x, true_derivative, label='True Derivative')
-# plt.xlabel('x')
-# plt.ylabel('Derivative')
-# plt.legend()
-# plt.title('Numerical vs. True Derivative of f(x) = sin(x)')
-# plt.grid(True)
-# plt.show()
+# Plot the results
+plt.plot(x, numerical_derivative, label='Numerical Derivative')
+plt.plot(x, true_derivative, label='True Derivative')
+plt.xlabel('x')
+plt.ylabel('Derivative')
+plt.legend()
+plt.title('Numerical vs. True Derivative of f(x) = sin(x)')
+plt.grid(True)
+plt.show()
 
 
 
@@ -64,6 +64,22 @@ for scheme, coeffs in coefficients.items():
     numerical_derivative = shifted_values / delta_x
 
     numerical_derivatives[scheme] = numerical_derivative
+
+order1 = 1
+coefficients = np.array([0, 0, 0, -1, 1, 0, 0])  # Coefficients for first-order accuracy
+numerical_derivative = np.sum(coefficients * np.roll(f(x), -order2 // 1)) / delta_x
+
+order2 = 2
+coefficients = np.array([0, 0, -0.5, 0, 0.5, 0, 0])  # Coefficients for second-order accuracy
+numerical_derivative = np.sum(coefficients * np.roll(f(x), -order2 // 2)) / delta_x
+
+order4 = 4
+coefficients = np.array([0, 1/12, -2/3, 0, 2/3, -1/12, 0])  # Coefficients for fourth-order accuracy
+numerical_derivative = np.sum(coefficients * np.roll(f(x), -order2 // 4)) / delta_x
+
+order6 = 6
+coefficients = np.array([-1/60, 3/20, -3/4, 0, 3/4, -3/20, 1/60])  # Coefficients for sixth-order accuracy
+numerical_derivative = np.sum(coefficients * np.roll(f(x), -order2 // 6)) / delta_x
 
 # Compute the true derivative
 true_derivative = f_prime(x)
