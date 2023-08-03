@@ -31,6 +31,14 @@ x_pos = np.linspace(0, 1, N)[1:] #remove the first element by indexing
 #x_neg = np.linspace(-5, 0)
 #x_pos = np.linspace(0, 5)
 
+# Define the coefficients for each scheme in the "Finite Difference Coefficients for the First Derivative" table
+schemes = [
+    {"coeffs": [0, 0, 0, -1, 1, 0, 0, 0], "shifts": [-3, -2, -1, 0, 1, 2, 3, 4]},  # First row in the table
+    {"coeffs": [0, 0, -1/2, 0, 1/2, 0, 0, 0], "shifts": [-3, -2, -1, 0, 1, 2, 3, 4]},  # Second row in the table
+    {"coeffs": [0, 1/12, -2/3, 0, 2/3, -1/12, 0, 0], "shifts": [-3, -2, -1, 0, 1, 2, 3, 4]},  # Third row in the table
+    {"coeffs": [-1/60, 3/20, -3/4, 0, 3/4, -3/20, 1/60, 0], "shifts": [-3, -2, -1, 0, 1, 2, 3, 4]},  # Fourth row in the table
+]
+
 # Plotting the functions for a:
 for a in [0, 1, 2]:
     plt.figure(figsize=(10, 5))
@@ -53,8 +61,3 @@ for a in [0, 1, 2]:
     plt.legend()
     plt.grid(True)
     plt.show()
-    
-
-
-
-
