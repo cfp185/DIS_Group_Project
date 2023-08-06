@@ -1,32 +1,19 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# # a)
-# Define the function f(x) = sin(x)
+
+# a)
 def f(x):
     return np.sin(x)
 
-# Define the analytical derivative f'(x) = cos(x)
 def f_prime(x):
     return np.cos(x)
 
-# Define the grid size
-N = 20
-theta = 0
+x = np.linspace(0, 2 * np.pi, 20, endpoint=False)
+delta_x = 2 * np.pi / 20
 
-# # Create the grid
-x = np.linspace(theta, 2 * np.pi, N, endpoint=False)
-
-# # Compute the grid spacing
-delta_x = 2 * np.pi / N
-
-# Evaluate the numerical derivative using the formula
 numerical_derivative = (np.roll(f(x), -1) - f(x)) / delta_x
-
-# Account for periodicity by wrapping the last point to the first point
 numerical_derivative[-1] = (f(x[0] + delta_x) - f(x[-1])) / delta_x
-
-# Compute the true derivative
 true_derivative = f_prime(x)
 
 # Plot the results
@@ -39,47 +26,125 @@ plt.title('Numerical vs. True Derivative of f(x) = sin(x)')
 plt.grid(True)
 plt.show()
 
-
-
 #b)
+def compute_derivative_periodic(f_vals, coeffs, shifts, h):
+    N = len(f_vals)
+    N_coeffs = len(coeffs)
+    padding = N_coeffs // 2
 
-# Compute the numerical derivatives using the given schemes
-coefficients = {
-    'O(Delta_x)': np.array([0, 0, 0, -1, 1, 0, 0]),
-    'O(Delta_x^2)': np.array([0, 0, -0.5, 0, 0.5, 0, 0]),
-    'O(Delta_x^4)': np.array([0, 1 / 12, -2 / 3, 0, 2 / 3, -1 / 12, 0]),
-    'O(Delta_x^6)': np.array([-1 / 60, 3 / 20, -3 / 4, 0, 3 / 4, -3 / 20, 1 / 60])
-}
+   
+    padded_f_vals = np.concatenate([f_vals[-padding:], f_vals, f_vals[:padding]])
 
-numerical_derivatives = {}
-for scheme, coeffs in coefficients.items():
-    # Initialize an array to store the shifted values
-    shifted_values = np.zeros_like(x)
+    # Compute the derivative
+    derivative = np.zeros(N)
+    for i in range(N):
+        for coeff, shift in zip(coeffs, shifts):
+            derivative[i] += coeff * padded_f_vals[i + shift + padding]
+    derivative /= delta_x
+    return derivative
 
-    # Apply the coefficients to the function values using a loop
-    for i in range(len(coeffs)):
-        shifted_values += coeffs[i] * np.roll(f(x), -i)
+schemes = [
+    {"coeffs": [0, 0, 0, -1, 1, 0, 0, 0], "shifts": [-3, -2, -1, 0, 1, 2, 3, 4]},  # First row in the table
+    {"coeffs": [0, 0, -1/2, 0, 1/2, 0, 0, 0], "shifts": [-3, -2, -1, 0, 1, 2, 3, 4]},  # Second row in the table
+    {"coeffs": [0, 1/12, -2/3, 0, 2/3, -1/12, 0, 0], "shifts": [-3, -2, -1, 0, 1, 2, 3, 4]},  # Third row in the table
+    {"coeffs": [-1/60, 3/20, -3/4, 0, 3/4, -3/20, 1/60, 0], "shifts": [-3, -2, -1, 0, 1, 2, 3, 4]},  # Fourth row in the table
+]
 
-    # Calculate the numerical derivative
-    numerical_derivative = shifted_values / delta_x
+labels = ["$O(\Delta x)$", "$O(\Delta x^2)$", "$O(\Delta x^4)$", "$O(\Delta x^6)$"]
+colors = ['blue', 'green', 'red', 'purple']
 
-    numerical_derivatives[scheme] = numerical_derivative
+for scheme, label, color in zip(schemes, labels, colors):
+    derivative = compute_derivative_periodic(f(x), scheme["coeffs"], scheme["shifts"], delta_x)
+    plt.plot(x, derivative, label=label, color=color)
 
-order1 = 1
-coefficients = np.array([0, 0, 0, -1, 1, 0, 0])  # Coefficients for first-order accuracy
-numerical_derivative = np.sum(coefficients * np.roll(f(x), -order2 // 1)) / delta_x
+plt.plot(x, np.cos(x), label="True derivative", color='black', linestyle='dashed')
 
-order2 = 2
-coefficients = np.array([0, 0, -0.5, 0, 0.5, 0, 0])  # Coefficients for second-order accuracy
-numerical_derivative = np.sum(coefficients * np.roll(f(x), -order2 // 2)) / delta_x
+plt.legend()
+plt.xlabel('x')
+plt.ylabel('f\'(x)')
+plt.title('Numerical derivative schemes')
+plt.grid(True)
+plt.show()
 
-order4 = 4
-coefficients = np.array([0, 1/12, -2/3, 0, 2/3, -1/12, 0])  # Coefficients for fourth-order accuracy
-numerical_derivative = np.sum(coefficients * np.roll(f(x), -order2 // 4)) / delta_x
+#c
+true_derivative = np.cos(x)
 
-order6 = 6
-coefficients = np.array([-1/60, 3/20, -3/4, 0, 3/4, -3/20, 1/60])  # Coefficients for sixth-order accuracy
-numerical_derivative = np.sum(coefficients * np.roll(f(x), -order2 // 6)) / delta_x
+for scheme, label in zip(schemes, labels):
+    numerical_derivative = compute_derivative_periodic(f(x), scheme["coeffs"], scheme["shifts"], delta_x)
+    max_abs_error = np.max(np.abs(true_derivative - numerical_derivative))
+    print(f"Max absolute error for {label}: {max_abs_error}")
 
-# Compute the true derivative
+#d
+N_values = np.logspace(1, 6, 50, dtype=int)
+
+max_abs_errors = {label: [] for label in labels}
+
+# Define the analytical derivative 
+def f_prime(x):
+    return np.cos(x)
+
+for N in N_values:
+    x = np.linspace(0, 2 * np.pi, 20, endpoint=False)
+    delta_x = 2 * np.pi / 20
+    true_derivative = f_prime(x)
+  
+    for scheme, label in zip(schemes, labels):
+        numerical_derivative = compute_derivative_periodic(f(x), scheme["coeffs"], scheme["shifts"], delta_x)
+        max_abs_error = np.max(np.abs(true_derivative - numerical_derivative))
+        max_abs_errors[label].append(max_abs_error)
+
+for label, color in zip(labels, colors):
+    plt.loglog(N_values, max_abs_errors[label], label=label, color=color)
+
+# Plot settings
+plt.legend()
+plt.xlabel('N')
+plt.ylabel('Max absolute error')
+plt.title('Max absolute error of each method as a function of N')
+plt.grid(True)
+plt.show()
+
+#e
+# Best accuracy for second order method
+best_accuracy_second_order = min(max_abs_errors["$O(\Delta x^2)$"])
+print(f"Best accuracy for second order method: {best_accuracy_second_order}")
+
+# Best accuracy for sixth order method
+best_accuracy_sixth_order = min(max_abs_errors["$O(\Delta x^6)$"])
+print(f"Best accuracy for sixth order method: {best_accuracy_sixth_order}")
+
+#f
+N = 100
+x = np.linspace(0, 2 * np.pi, N, endpoint=False)
 true_derivative = f_prime(x)
+
+numerical_derivative_fourth_order = compute_derivative_periodic(f(x), schemes[2]["coeffs"], schemes[2]["shifts"], delta_x)
+
+# Compute the max absolute error
+max_abs_error_fourth_order_at_N_100 = np.max(np.abs(true_derivative - numerical_derivative_fourth_order))
+print(f"Max absolute error: {max_abs_error_fourth_order_at_N_100}")
+
+N_for_second_order = next(N for N, error in zip(N_values, max_abs_errors["$O(\Delta x^2)$"]) if error <= max_abs_error_fourth_order_at_N_100)
+print(f"Amount of grid points: {N_for_second_order}")
+
+#g
+dx_values = 2 * np.pi / N_values
+
+for i, label in enumerate(labels):
+    plt.loglog(dx_values, dx_values**(i+1), label=f"~ $\Delta x^{i+1}$")
+
+plt.loglog(dx_values, 5 * 10**-16 / dx_values, label="5 * $10^{-16}$ / $\Delta x$")
+
+# Compute and plot the max absolute error for each method
+for label in labels:
+    plt.loglog(dx_values, max_abs_errors[label], label=label)
+
+# Plot settings
+plt.xlabel('N')
+plt.ylabel('Max Absolute Error')
+plt.title('Max Absolute Error vs. Grid Spacing')
+plt.legend()
+plt.grid(True)
+plt.show()
+
+
