@@ -20,18 +20,16 @@ def fm(x, a):
         fm_neg = -math.e**(-x) + a
         return fm_neg                   # x < 0
 
-# Subquestion b) *{
 # Generate separate linspace arrays for x < 0 and x > 0
 N = 1000
 x_neg = np.linspace(-1, 0, N)[1:] #remove the first element by indexing
 x_pos = np.linspace(0, 1, N)[1:] #remove the first element by indexing
-# Subquestion b) }*
 
 # Generates a "normal" linspace
 #x_neg = np.linspace(-5, 0)
 #x_pos = np.linspace(0, 5)
 
-# Plotting the functions for a:
+# Plotting the functions
 for a in [0, 1, 2]:
     plt.figure(figsize=(10, 5))
     plt.title(f"2.3 Discontinuities for a = {a}")
@@ -53,8 +51,4 @@ for a in [0, 1, 2]:
     plt.legend()
     plt.grid(True)
     plt.show()
-    
-
-
-
 
