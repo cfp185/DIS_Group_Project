@@ -58,3 +58,4 @@ plt.ylabel('Population Count')
 plt.title('Political Loyalties Simulation')
 plt.legend()
 plt.show()
+

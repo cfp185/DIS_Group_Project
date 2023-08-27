@@ -73,5 +73,3 @@ print("Energy Change:", energy_change)
 new_S = spin_flip(S.copy(), i, temperature)
 print("Updated Spin Configuration:\n", new_S)
 
-
-
